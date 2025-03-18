@@ -23,8 +23,13 @@ namespace maioroumenorquedez
 
             if(valor > 10)
             {
-                MessageBox.Show("O número: " + valor + " é maior que 10");
+                MessageBox.Show("O número: " + valor + " é maior que 10", "Maior ou menor?",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("O número: " + valor + " é menor que 10", "Maior ou menor?", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
+
     }
 }

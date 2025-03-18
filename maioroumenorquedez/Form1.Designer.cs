@@ -69,10 +69,14 @@ namespace maioroumenorquedez
             // 
             // txtValor
             // 
+            this.txtValor.BackColor = System.Drawing.SystemColors.InfoText;
+            this.txtValor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValor.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.txtValor.Location = new System.Drawing.Point(195, 154);
             this.txtValor.Name = "txtValor";
-            this.txtValor.Size = new System.Drawing.Size(122, 20);
+            this.txtValor.Size = new System.Drawing.Size(122, 26);
             this.txtValor.TabIndex = 1;
+            this.txtValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // btnVerificar
             // 
