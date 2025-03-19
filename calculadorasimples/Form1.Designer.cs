@@ -30,16 +30,16 @@ namespace calculadorasimples
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.lblPrimeiroNumero = new System.Windows.Forms.Label();
-            this.txtPrimeiroNumero = new System.Windows.Forms.TextBox();
-            this.lblSegundoNumero = new System.Windows.Forms.Label();
-            this.txtSegundoNumero = new System.Windows.Forms.TextBox();
-            this.btnSomar = new System.Windows.Forms.Button();
-            this.lblResultado = new System.Windows.Forms.Label();
-            this.lblProdutoCalculo = new System.Windows.Forms.Label();
-            this.btnSubtrair = new System.Windows.Forms.Button();
-            this.btnMultiplicar = new System.Windows.Forms.Button();
             this.btnDividir = new System.Windows.Forms.Button();
+            this.btnMultiplicar = new System.Windows.Forms.Button();
+            this.btnSubtrair = new System.Windows.Forms.Button();
+            this.lblProdutoCalculo = new System.Windows.Forms.Label();
+            this.lblResultado = new System.Windows.Forms.Label();
+            this.btnSomar = new System.Windows.Forms.Button();
+            this.txtSegundoNumero = new System.Windows.Forms.TextBox();
+            this.lblSegundoNumero = new System.Windows.Forms.Label();
+            this.txtPrimeiroNumero = new System.Windows.Forms.TextBox();
+            this.lblPrimeiroNumero = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,72 +62,30 @@ namespace calculadorasimples
             this.groupBox1.TabStop = false;
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // lblPrimeiroNumero
+            // btnDividir
             // 
-            this.lblPrimeiroNumero.AutoSize = true;
-            this.lblPrimeiroNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPrimeiroNumero.Location = new System.Drawing.Point(73, 60);
-            this.lblPrimeiroNumero.Name = "lblPrimeiroNumero";
-            this.lblPrimeiroNumero.Size = new System.Drawing.Size(126, 20);
-            this.lblPrimeiroNumero.TabIndex = 0;
-            this.lblPrimeiroNumero.Text = "Primeiro Número";
+            this.btnDividir.BackColor = System.Drawing.Color.Purple;
+            this.btnDividir.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDividir.ForeColor = System.Drawing.Color.White;
+            this.btnDividir.Location = new System.Drawing.Point(294, 232);
+            this.btnDividir.Name = "btnDividir";
+            this.btnDividir.Size = new System.Drawing.Size(124, 46);
+            this.btnDividir.TabIndex = 9;
+            this.btnDividir.Text = "Dividir";
+            this.btnDividir.UseVisualStyleBackColor = false;
+            this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
             // 
-            // txtPrimeiroNumero
+            // btnMultiplicar
             // 
-            this.txtPrimeiroNumero.Location = new System.Drawing.Point(77, 101);
-            this.txtPrimeiroNumero.Name = "txtPrimeiroNumero";
-            this.txtPrimeiroNumero.Size = new System.Drawing.Size(122, 20);
-            this.txtPrimeiroNumero.TabIndex = 1;
-            // 
-            // lblSegundoNumero
-            // 
-            this.lblSegundoNumero.AutoSize = true;
-            this.lblSegundoNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSegundoNumero.Location = new System.Drawing.Point(73, 143);
-            this.lblSegundoNumero.Name = "lblSegundoNumero";
-            this.lblSegundoNumero.Size = new System.Drawing.Size(134, 20);
-            this.lblSegundoNumero.TabIndex = 2;
-            this.lblSegundoNumero.Text = "Segundo Número";
-            // 
-            // txtSegundoNumero
-            // 
-            this.txtSegundoNumero.Location = new System.Drawing.Point(77, 178);
-            this.txtSegundoNumero.Name = "txtSegundoNumero";
-            this.txtSegundoNumero.Size = new System.Drawing.Size(122, 20);
-            this.txtSegundoNumero.TabIndex = 3;
-            // 
-            // btnSomar
-            // 
-            this.btnSomar.BackColor = System.Drawing.Color.ForestGreen;
-            this.btnSomar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSomar.ForeColor = System.Drawing.Color.White;
-            this.btnSomar.Location = new System.Drawing.Point(294, 78);
-            this.btnSomar.Name = "btnSomar";
-            this.btnSomar.Size = new System.Drawing.Size(125, 43);
-            this.btnSomar.TabIndex = 4;
-            this.btnSomar.Text = "Somar";
-            this.btnSomar.UseVisualStyleBackColor = false;
-            this.btnSomar.Click += new System.EventHandler(this.btnSomar_Click);
-            // 
-            // lblResultado
-            // 
-            this.lblResultado.AutoSize = true;
-            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblResultado.Location = new System.Drawing.Point(73, 254);
-            this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(99, 24);
-            this.lblResultado.TabIndex = 5;
-            this.lblResultado.Text = "Resultado:";
-            // 
-            // lblProdutoCalculo
-            // 
-            this.lblProdutoCalculo.AutoSize = true;
-            this.lblProdutoCalculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblProdutoCalculo.Location = new System.Drawing.Point(170, 247);
-            this.lblProdutoCalculo.Name = "lblProdutoCalculo";
-            this.lblProdutoCalculo.Size = new System.Drawing.Size(29, 31);
-            this.lblProdutoCalculo.TabIndex = 6;
-            this.lblProdutoCalculo.Text = "0";
+            this.btnMultiplicar.BackColor = System.Drawing.Color.DarkOrange;
+            this.btnMultiplicar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMultiplicar.Location = new System.Drawing.Point(294, 180);
+            this.btnMultiplicar.Name = "btnMultiplicar";
+            this.btnMultiplicar.Size = new System.Drawing.Size(124, 46);
+            this.btnMultiplicar.TabIndex = 8;
+            this.btnMultiplicar.Text = "Multiplicar";
+            this.btnMultiplicar.UseVisualStyleBackColor = false;
+            this.btnMultiplicar.Click += new System.EventHandler(this.btnMultiplicar_Click);
             // 
             // btnSubtrair
             // 
@@ -142,30 +100,72 @@ namespace calculadorasimples
             this.btnSubtrair.UseVisualStyleBackColor = false;
             this.btnSubtrair.Click += new System.EventHandler(this.btnSubtrair_Click);
             // 
-            // btnMultiplicar
+            // lblProdutoCalculo
             // 
-            this.btnMultiplicar.BackColor = System.Drawing.Color.DarkOrange;
-            this.btnMultiplicar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnMultiplicar.Location = new System.Drawing.Point(294, 180);
-            this.btnMultiplicar.Name = "btnMultiplicar";
-            this.btnMultiplicar.Size = new System.Drawing.Size(124, 46);
-            this.btnMultiplicar.TabIndex = 8;
-            this.btnMultiplicar.Text = "Multiplicar";
-            this.btnMultiplicar.UseVisualStyleBackColor = false;
-            this.btnMultiplicar.Click += new System.EventHandler(this.btnMultiplicar_Click);
+            this.lblProdutoCalculo.AutoSize = true;
+            this.lblProdutoCalculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblProdutoCalculo.Location = new System.Drawing.Point(170, 247);
+            this.lblProdutoCalculo.Name = "lblProdutoCalculo";
+            this.lblProdutoCalculo.Size = new System.Drawing.Size(29, 31);
+            this.lblProdutoCalculo.TabIndex = 6;
+            this.lblProdutoCalculo.Text = "0";
             // 
-            // btnDividir
+            // lblResultado
             // 
-            this.btnDividir.BackColor = System.Drawing.Color.Purple;
-            this.btnDividir.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDividir.ForeColor = System.Drawing.Color.White;
-            this.btnDividir.Location = new System.Drawing.Point(294, 232);
-            this.btnDividir.Name = "btnDividir";
-            this.btnDividir.Size = new System.Drawing.Size(124, 46);
-            this.btnDividir.TabIndex = 9;
-            this.btnDividir.Text = "Dividir";
-            this.btnDividir.UseVisualStyleBackColor = false;
-            this.btnDividir.Click += new System.EventHandler(this.btnDividir_Click);
+            this.lblResultado.AutoSize = true;
+            this.lblResultado.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResultado.Location = new System.Drawing.Point(73, 254);
+            this.lblResultado.Name = "lblResultado";
+            this.lblResultado.Size = new System.Drawing.Size(99, 24);
+            this.lblResultado.TabIndex = 5;
+            this.lblResultado.Text = "Resultado:";
+            // 
+            // btnSomar
+            // 
+            this.btnSomar.BackColor = System.Drawing.Color.ForestGreen;
+            this.btnSomar.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSomar.ForeColor = System.Drawing.Color.White;
+            this.btnSomar.Location = new System.Drawing.Point(294, 78);
+            this.btnSomar.Name = "btnSomar";
+            this.btnSomar.Size = new System.Drawing.Size(125, 43);
+            this.btnSomar.TabIndex = 4;
+            this.btnSomar.Text = "Somar";
+            this.btnSomar.UseVisualStyleBackColor = false;
+            this.btnSomar.Click += new System.EventHandler(this.btnSomar_Click);
+            // 
+            // txtSegundoNumero
+            // 
+            this.txtSegundoNumero.Location = new System.Drawing.Point(77, 178);
+            this.txtSegundoNumero.Name = "txtSegundoNumero";
+            this.txtSegundoNumero.Size = new System.Drawing.Size(122, 20);
+            this.txtSegundoNumero.TabIndex = 3;
+            // 
+            // lblSegundoNumero
+            // 
+            this.lblSegundoNumero.AutoSize = true;
+            this.lblSegundoNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSegundoNumero.Location = new System.Drawing.Point(73, 143);
+            this.lblSegundoNumero.Name = "lblSegundoNumero";
+            this.lblSegundoNumero.Size = new System.Drawing.Size(134, 20);
+            this.lblSegundoNumero.TabIndex = 2;
+            this.lblSegundoNumero.Text = "Segundo Número";
+            // 
+            // txtPrimeiroNumero
+            // 
+            this.txtPrimeiroNumero.Location = new System.Drawing.Point(77, 101);
+            this.txtPrimeiroNumero.Name = "txtPrimeiroNumero";
+            this.txtPrimeiroNumero.Size = new System.Drawing.Size(122, 20);
+            this.txtPrimeiroNumero.TabIndex = 1;
+            // 
+            // lblPrimeiroNumero
+            // 
+            this.lblPrimeiroNumero.AutoSize = true;
+            this.lblPrimeiroNumero.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPrimeiroNumero.Location = new System.Drawing.Point(73, 60);
+            this.lblPrimeiroNumero.Name = "lblPrimeiroNumero";
+            this.lblPrimeiroNumero.Size = new System.Drawing.Size(126, 20);
+            this.lblPrimeiroNumero.TabIndex = 0;
+            this.lblPrimeiroNumero.Text = "Primeiro Número";
             // 
             // frmCalculadoraSimples
             // 
