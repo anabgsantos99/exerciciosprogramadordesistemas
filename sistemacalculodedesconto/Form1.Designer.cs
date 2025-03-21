@@ -31,15 +31,15 @@ namespace sistemacalculodedesconto
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.lblMensagem = new System.Windows.Forms.Label();
+            this.btnCalcular = new System.Windows.Forms.Button();
+            this.txtDesconto = new System.Windows.Forms.TextBox();
+            this.txtValorCompra = new System.Windows.Forms.TextBox();
             this.lblResultado = new System.Windows.Forms.Label();
             this.lblTituloResultado = new System.Windows.Forms.Label();
             this.lblDesconto = new System.Windows.Forms.Label();
             this.lblValorCompra = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
-            this.txtValorCompra = new System.Windows.Forms.TextBox();
-            this.txtDesconto = new System.Windows.Forms.TextBox();
-            this.btnCalcular = new System.Windows.Forms.Button();
-            this.lblMensagem = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
@@ -72,6 +72,53 @@ namespace sistemacalculodedesconto
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
             // 
+            // lblMensagem
+            // 
+            this.lblMensagem.AutoSize = true;
+            this.lblMensagem.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.lblMensagem.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMensagem.ForeColor = System.Drawing.Color.White;
+            this.lblMensagem.Location = new System.Drawing.Point(3, 360);
+            this.lblMensagem.Name = "lblMensagem";
+            this.lblMensagem.Size = new System.Drawing.Size(0, 23);
+            this.lblMensagem.TabIndex = 8;
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.BackColor = System.Drawing.Color.Turquoise;
+            this.btnCalcular.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.ForeColor = System.Drawing.Color.Black;
+            this.btnCalcular.Location = new System.Drawing.Point(291, 318);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(175, 33);
+            this.btnCalcular.TabIndex = 7;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = false;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
+            // 
+            // txtDesconto
+            // 
+            this.txtDesconto.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDesconto.ForeColor = System.Drawing.Color.Black;
+            this.txtDesconto.Location = new System.Drawing.Point(447, 189);
+            this.txtDesconto.Name = "txtDesconto";
+            this.txtDesconto.Size = new System.Drawing.Size(100, 28);
+            this.txtDesconto.TabIndex = 6;
+            this.txtDesconto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtDesconto.TextChanged += new System.EventHandler(this.txtDesconto_TextChanged);
+            // 
+            // txtValorCompra
+            // 
+            this.txtValorCompra.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorCompra.ForeColor = System.Drawing.Color.Black;
+            this.txtValorCompra.Location = new System.Drawing.Point(262, 126);
+            this.txtValorCompra.Name = "txtValorCompra";
+            this.txtValorCompra.Size = new System.Drawing.Size(100, 28);
+            this.txtValorCompra.TabIndex = 5;
+            this.txtValorCompra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtValorCompra.TextChanged += new System.EventHandler(this.txtValorCompra_TextChanged);
+            // 
             // lblResultado
             // 
             this.lblResultado.AutoSize = true;
@@ -79,9 +126,8 @@ namespace sistemacalculodedesconto
             this.lblResultado.ForeColor = System.Drawing.Color.White;
             this.lblResultado.Location = new System.Drawing.Point(369, 253);
             this.lblResultado.Name = "lblResultado";
-            this.lblResultado.Size = new System.Drawing.Size(21, 23);
+            this.lblResultado.Size = new System.Drawing.Size(0, 23);
             this.lblResultado.TabIndex = 4;
-            this.lblResultado.Text = "0";
             // 
             // lblTituloResultado
             // 
@@ -126,54 +172,6 @@ namespace sistemacalculodedesconto
             this.lblTitulo.Size = new System.Drawing.Size(425, 37);
             this.lblTitulo.TabIndex = 0;
             this.lblTitulo.Text = "Sistema de Cálculo de Desconto";
-            // 
-            // txtValorCompra
-            // 
-            this.txtValorCompra.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorCompra.ForeColor = System.Drawing.Color.Black;
-            this.txtValorCompra.Location = new System.Drawing.Point(262, 126);
-            this.txtValorCompra.Name = "txtValorCompra";
-            this.txtValorCompra.Size = new System.Drawing.Size(100, 28);
-            this.txtValorCompra.TabIndex = 5;
-            this.txtValorCompra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtValorCompra.TextChanged += new System.EventHandler(this.txtValorCompra_TextChanged);
-            // 
-            // txtDesconto
-            // 
-            this.txtDesconto.Font = new System.Drawing.Font("Microsoft Tai Le", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtDesconto.ForeColor = System.Drawing.Color.Black;
-            this.txtDesconto.Location = new System.Drawing.Point(447, 189);
-            this.txtDesconto.Name = "txtDesconto";
-            this.txtDesconto.Size = new System.Drawing.Size(100, 28);
-            this.txtDesconto.TabIndex = 6;
-            this.txtDesconto.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.txtDesconto.TextChanged += new System.EventHandler(this.txtDesconto_TextChanged);
-            // 
-            // btnCalcular
-            // 
-            this.btnCalcular.BackColor = System.Drawing.Color.Turquoise;
-            this.btnCalcular.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Teal;
-            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.ForeColor = System.Drawing.Color.Black;
-            this.btnCalcular.Location = new System.Drawing.Point(291, 318);
-            this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(175, 33);
-            this.btnCalcular.TabIndex = 7;
-            this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = false;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click);
-            // 
-            // lblMensagem
-            // 
-            this.lblMensagem.AutoSize = true;
-            this.lblMensagem.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.lblMensagem.Font = new System.Drawing.Font("Microsoft Tai Le", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMensagem.ForeColor = System.Drawing.Color.White;
-            this.lblMensagem.Location = new System.Drawing.Point(3, 360);
-            this.lblMensagem.Name = "lblMensagem";
-            this.lblMensagem.Size = new System.Drawing.Size(21, 23);
-            this.lblMensagem.TabIndex = 8;
-            this.lblMensagem.Text = "0";
             // 
             // frmSistemaCalculoDesconto
             // 

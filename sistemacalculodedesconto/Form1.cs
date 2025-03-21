@@ -23,36 +23,46 @@ namespace sistemacalculodedesconto
             InitializeComponent();
         }
 
-
-
         private void txtValorCompra_TextChanged(object sender, EventArgs e)
         {
-            if (!decimal.TryParse(txtValorCompra.Text, out valor))
+            if (!decimal.TryParse(txtValorCompra.Text, out valor) || valor <= 0)
             {
                 lblMensagem.Text = "Insira um número válido para o valor de compra";
+                return;
+            }
+            else
+            {
+                lblMensagem.Text = "";
                 return;
             }
         }
 
         private void txtDesconto_TextChanged(object sender, EventArgs e)
         {
-            if (!decimal.TryParse(txtDesconto.Text, out desconto))
+            if (!decimal.TryParse(txtDesconto.Text, out desconto) || valor <= 0)
             {
                 lblMensagem.Text = "Insira um número válido para desconto";
                 return;
             }
+            else
+            {
+                lblMensagem.Text = "";
+                return;
+            }
         }
 
+        private decimal CalcularDesconto(decimal valor, decimal desconto)
+        {
+            return valor -(valor * desconto / porcentagem);
+        }
 
         private void btnCalcular_Click(object sender, EventArgs e)
         {
 
-            valorfinal = valor - (valor * desconto / porcentagem);
-            lblResultado.Text = Convert.ToString(valorfinal);
-
+            valorfinal = CalcularDesconto(valor, desconto);
+            lblResultado.Text = valorfinal.ToString("F2");
 
         }
 
-        
     }
 }
