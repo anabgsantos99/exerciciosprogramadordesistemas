@@ -1,0 +1,10 @@
+C:\Users\ana.bgsantos10\source\repos\menu2\bin\x64\Debug\menu2.exe.config
+C:\Users\ana.bgsantos10\source\repos\menu2\bin\x64\Debug\menu2.exe
+C:\Users\ana.bgsantos10\source\repos\menu2\bin\x64\Debug\menu2.pdb
+C:\Users\ana.bgsantos10\source\repos\menu2\obj\x64\Debug\menu2.csproj.AssemblyReference.cache
+C:\Users\ana.bgsantos10\source\repos\menu2\obj\x64\Debug\menu2.frmMenu.resources
+C:\Users\ana.bgsantos10\source\repos\menu2\obj\x64\Debug\menu2.Properties.Resources.resources
+C:\Users\ana.bgsantos10\source\repos\menu2\obj\x64\Debug\menu2.csproj.GenerateResource.cache
+C:\Users\ana.bgsantos10\source\repos\menu2\obj\x64\Debug\menu2.csproj.CoreCompileInputs.cache
+C:\Users\ana.bgsantos10\source\repos\menu2\obj\x64\Debug\menu2.exe
+C:\Users\ana.bgsantos10\source\repos\menu2\obj\x64\Debug\menu2.pdb
